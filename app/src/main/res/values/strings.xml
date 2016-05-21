@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ilmnuri</string>
+
+    <string name="Loading">Darslik yuklanmoqda…</string>
+    <string name="registering_message">Xabarlar yuklanmoqda</string>
+    <string name="gcm_send_message">true</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+    <string name="token_error_message">Error</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ilova haqida</string>
+    <string name="nav_item_attachment">www.ilmnuri.net</string>
+    <string name="nav_item_images">ilmnuri sahifasi</string>
+    <string name="nav_item_location">ilmnuri sahifasi</string>
+    <string name="nav_sub_menu">Kichik Menu</string>
+    <string name="nav_sub_menu_item01">Ilmnuri</string>
+    <string name="nav_sub_menu_item02">Ilmnuri</string>
+    <string name="drawer_header_text">ilmnuri web sahifasi</string>
+    <string name="second_activity_text">www.ilmnuri.net</string>
+    <string name="title_activity_second">Album Name</string>
+    <string name="title_activity_play" />
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_exception_view">ExceptionViewActivity</string>
+    <string name="title_activity_perm_denied">PermDenied</string>
+    <string name="audio">Darsliklar mp3 formatda</string>
+    <string name="track">darslik 00</string>
+    <string name="delete">O\'chirib tashlash</string>
+    <string name="duration">Darslik Muddati</string>
+    <string name="search">Izlash</string>
+    <string name="permission_denied">Telefon diskidan joy berilmagan. Nastroykadagi app managerdan ilmnurini topib diskdan joy berish tugmasini bosing yoki appni qaytadan yuklang. —Team ilmnuri</string>
+    <string name="title_activity_web_view">WebView</string>
+</resources>

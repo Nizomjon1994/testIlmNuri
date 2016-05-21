@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ilmnuri.com.PlayActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin">
+
+            <TextView
+                android:id="@+id/tv_play_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/hello_world" />
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_alignParentBottom="true"
+           android:padding="10dp"
+           android:background="@color/dark">
+           <TextView
+               android:id="@+id/songDuration"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="@string/duration" />
+
+           <SeekBar
+               android:id="@+id/seekBar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+               android:gravity="center_horizontal"
+               android:orientation="horizontal" >
+
+               <ImageButton
+                   android:id="@+id/media_rew"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="14dp"
+                   android:onClick="rewind"
+                   android:src="@android:drawable/ic_media_rew"
+                   android:contentDescription="@string/hello_world" />
+
+               <ImageButton
+                   android:id="@+id/media_pause"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="14dp"
+                   android:onClick="pause"
+                   android:src="@android:drawable/ic_media_pause"
+                   android:contentDescription="@string/hello_world" />
+
+               <ImageButton
+                   android:id="@+id/media_play"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="14dp"
+                   android:src="@android:drawable/ic_media_play"
+                   android:contentDescription="@string/hello_world" />
+
+               <ImageButton
+                   android:id="@+id/media_ff"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="14dp"
+                   android:onClick="forward"
+                   android:src="@android:drawable/ic_media_ff"
+                   android:contentDescription="@string/hello_world" />
+           </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
